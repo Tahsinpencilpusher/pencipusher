@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add some styles for the prices section */
+        .prices {
+            background-color: #f0f0f0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Add some styles for the headings */
+        .prices h1 {
+            color: #333333;
+            text-align: center;
+        }
+
+        .prices h2 {
+            color: #666666;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Add some styles for the tables */
+        .prices table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .prices th, .prices td {
+            border: 1px solid #cccccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .prices th {
+            background-color: #eeeeee;
+        }
+
+        /* Add some styles for the images */
+        .prices img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        /* Add some media queries for responsiveness */
+        @media (max-width: 600px) {
+            .prices table, .prices th, .prices td {
+                display: block;
+                width: auto;
+            }
+
+            .prices th, .prices td {
+                border: none;
+                padding: 5px;
+            }
+
+            .prices th {
+                display: none;
+            }
+
+            .prices td:before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: inline-block;
+                width: 100px;
+                vertical-align: top;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <section class="prices">
+        <h1>Prices</h1>
+        <p>Here you can find a variety of stationary products at affordable prices. Whether you need pens, pencils, notebooks, or erasers, we have it all. Browse through our selection and order online today.</p>
+
+        <!-- Add a table for pens -->
+        <h2>Pens</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Image"><img src="^1^" alt="Ballpoint pen"></td>
+                    <td data-label="Name">Ballpoint pen</td>
+                    <td data-label="Description">A classic pen with a smooth writing experience. Available in black, blue, red, and green ink.</td>
+                    <td data-label="Price">£0.50</td>
+                </tr>
+                <tr>
+                    <td data-label="Image"><img src="^2^" alt="Gel pen"></td>
+                    <td data-label="Name">Gel pen</td>
+                    <td data-label="Description">A pen with a gel-based ink that glides smoothly on paper. Available in various colors and tip sizes.</td>
+                    <td data-label="Price">£0.75</td>
+                </tr>
+                <tr>
+                    <td data-label="Image"><img src="^3^" alt="Fountain pen"></td>
+                    <td data-label="Name">Fountain pen</td>
+                    <td data-label="Description">A pen with a nib that delivers ink from a reservoir. Ideal for elegant handwriting and calligraphy. Available in different nib sizes and ink colors.</td>
+                    <td data-label="Price">£5.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Add a table for pencils -->
+        <h2>Pencils</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Image"><img src="^4^" alt="Graphite pencil"></td>
+                    <td data-label="Name">Graphite pencil</td>
+                    <td data-label="Description">A pencil with a graphite core that can be sharpened to a fine point. Suitable for drawing and writing. Available in different grades of hardness.</td>
+                    <td data-label="Price">£0.25</td>
+                </tr>
+                <tr>
+                    <td data-label="Image"><img src="^5^" alt="Colored pencil"></td>
+                    <td data-label="Name">Colored pencil</td>
+                    <td data-label="Description">A pencil with a colored core that can be used for shading and blending. Great for creating colorful artworks. Available in a range of colors.</td>
+                    <td data-label="Price">£0.50</td>
+                </tr>
+                <tr>
+                    <td data-label="Image"><img src="^6^" alt="Mechanical pencil"></td>
+                    <td data-label="Name">Mechanical pencil</td>
+                    <td data-label="Description">A pencil with a metal or plastic casing that holds a thin lead. The lead can be advanced by clicking a button or twisting the barrel. No need for sharpening. Available in different lead sizes and colors.</td>
+                    <td data-label="Price">£1.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+    </section>  
+</body>
+</html>

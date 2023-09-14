@@ -1,0 +1,47 @@
+let player = prompt("Enter rock (r), paper (p) or scissors (s)?")
+
+if (player == "r") { 
+console.log("You have chosen ROCK")
+}
+else if (player== "p") {
+    console.log ("You have chosen PAPER")
+}
+else { 
+    console.log("You have chosen SCISSORS")
+}
+
+let random = Math.floor(Math.random() * 3)+1
+let computer = 0;
+
+if (random == 1) {
+    console.log
+}
+
+
+
+
+if (random==1 ) {
+    console.log("computer has chosen ROCK");
+    computer = "r";
+}
+else if (random==2 ) {
+    console.log("computer has chosen PAPER");
+    computer = "P";
+}
+else{
+    console.log("COMPUTER HAS chosen SCISSORS")
+}
+
+
+if (player==computer) {
+    alert("it's a draw")
+
+}
+else if (player == "r") {
+    if (computer == "s") {
+        console.log|("you win!");
+}
+}
+else { 
+    console.log("you lose:")
+}

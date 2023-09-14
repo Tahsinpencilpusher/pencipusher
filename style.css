@@ -1,0 +1,22 @@
+h1 {
+
+    background-color: aliceblue;
+    color:blue;
+    }
+    
+    nav > ul > {
+    
+    overflow:hidden;
+    list-style-type: none;
+    background-color: #f3f0ff;
+    }
+    
+    nav > ul > li {
+    list-style-type: none;
+    float: right;
+    display: block ;
+    color: rgb(255, 0, 0);
+    padding:20px;
+    
+    
+    }
